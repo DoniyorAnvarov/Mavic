@@ -1,0 +1,25 @@
+$Ubuntu: ('Bold', 700),
+('Light', 300),
+('Medium', 500),
+('Regular', 400);
+
+@each $name,
+$weight in $Ubuntu {
+    @font-face {
+        font-family: 'Ubuntu';
+        src: url(../fonts/Ubuntu/Ubuntu-#{$name}.woff2);
+        font-weight: $weight;
+    }
+}
+
+$SF: ('Regular', 400),
+('Semibold'600);
+
+@each $name,
+$weight in $SF {
+    @font-face {
+        font-family: 'SF';
+        src: url(../fonts/SF/SFProDisplay-#{$name}.woff2);
+        font-weight: $weight;
+    }
+}
